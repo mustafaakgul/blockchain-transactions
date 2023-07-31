@@ -1,0 +1,14 @@
+{
+  "transport": "scp",
+  "hostname": "206.189.56.245",
+  "uploadOnSave": true,
+  "port": 22,
+  "username": "root",
+  "password": "deskale123AS",
+  "target": "/opt/venv/cloudbank",
+  "ignore": [
+    ".svn/**",
+    ".remote-sync.json",
+    ".git/**"
+  ]
+}
