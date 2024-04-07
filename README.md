@@ -1,4 +1,5 @@
 # Wellcome to CloudBank
+This Python project showcases a blockchain implementation with functionalities for creating and verifying transactions
 It is the most popular and original CloudCoin python script. The code is exceptionally portable and has been used successfully on a very broad range of ubuntu systems and hardware. Forked and updated.
 
 ```shell
