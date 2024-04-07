@@ -1,33 +1,9 @@
 # Wellcome to CloudBank
-
-It is the most popular and original CloudCoin python script. The code is exceptionally portable and has been used successfully on a very broad range of ubuntu systems and hardware.
-
-## Contact
-
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/cloudbank-github/)
-[![GitHub Issues](https://img.shields.io/badge/open%20issues-0-yellow.svg)](https://github.com/omgbbqhaxx/CloudBank/issues)
-
-- Chat in [cloudbank-github channel on Gitter](https://gitter.im/cloudbank-github).
-- Report bugs, issues or feature requests using [GitHub issues](issues/new).
-
-
-
-## Getting Started
-
-The CloudBank Documentation site hosts the **[CloudBank homepage](http://cloudbankproject.com/)**, which
-has a Quick Start section.
-
-Operating system | Status
----------------- | ----------
-Ubuntu and macOS | [![TravisCI](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://travis-ci.org/cloudbank/cloudbank-github)
-Windows          | [![AppVeyor](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://ci.appveyor.com/project/cloudbank/cloudbank-github)
-
+It is the most popular and original CloudCoin python script. The code is exceptionally portable and has been used successfully on a very broad range of ubuntu systems and hardware. Forked and updated.
 
 ```shell
 sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install vim -y && sudo apt-get install python-dev -y && sudo apt-get install libevent-dev -y &&  sudo apt-get install python-virtualenv -y && apt-get install git -y
 ```
-
-
 
 ## Install python last version..
 
@@ -75,9 +51,7 @@ redis-cli
 ping
 ```
 
-
-
-## 4p2p github helper comments.
+## Github helper comments.
 ```shell
 git clone https://github.com/omgbbqhaxx/cloudbankproject.git
 git pull
@@ -107,8 +81,6 @@ python setup.py install
 pip install chaussette
 ```
 
-
-
 example.ini  **[Show docs from here](https://circus.readthedocs.io/en/latest/installation/)**,
 ```shell
 [watcher:startserver]
@@ -124,16 +96,12 @@ cmd = celery -A cloudbank worker --workdir /opt/venv/cloudbank  -l info -B
 numprocesses = 1
 ```
 
-
-
 The file is then passed to circusd:
 ```shell
 circusd example.ini
 circusd --daemon example.ini
 circusctl quit --waiting
 ```
-
-
 
 ## Finally we can complate nginx configuration!
 
@@ -149,42 +117,15 @@ mkdir logs && cd logs
 touch nginx-access.log && touch nginx-error.log
 ```
 
-
 # REST APIs
-
-## GET Endpoints
- * `http://$yourURL.com/api/v1/createnewwallet/` - allows to create new wallet and private key.
-
- * `http://$yourURL.com/api/v1/alltransactions/` - allows to get all transactions from database.
-
- * `http://$yourURL.com/api/v1/gettransaction/$transactionID` - allows to get transaction details.
-
- * `http://$yourURL.com/api/v1/getwalletfrompkey/$publicKey` - allows to create new wallet and private key.
-
- * `http://$yourURL.com/api/v1/getpublickeyfromprikey/$privateKEY` - allows to get public key from private key.
-
- * `http://$yourURL.com/api/v1/getbalance/$wallet` - allows to get last balance from wallet.
-
- *  `http://$yourURL.com/api/v1/getwalletdetails/$wallet` - allows to get all wallet history.
-
-
-
-
-
-## POST Endpoints
-  * `http://$yourURL.com/api/v1/sendcloudcoin/`
-  * `sprikey` sender's private key
-  * `receiverwalletallows`  receiver's wallet
-  * `amount`  and amount.
-  ___
-
-
-## Donations
-  * My ethereum wallet : `0xFBd6f9704478104f0EF3F4f9834c3621210fE598`
-  * My Nano wallet : `xrb_1ppmk9ki9kungyer845deysmwokfeughmojxuhorpn7fpiizmka7b3r5jj4z`
-
-## License
-
-[![License](https://img.shields.io/github/license/ethereum/cpp-ethereum.svg)](LICENSE)
-
-All contributions are made under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html). See [LICENSE](LICENSE).
+* `http://$yourURL.com/api/v1/createnewwallet/` - allows to create new wallet and private key.
+* `http://$yourURL.com/api/v1/alltransactions/` - allows to get all transactions from database.
+* `http://$yourURL.com/api/v1/gettransaction/$transactionID` - allows to get transaction details.
+* `http://$yourURL.com/api/v1/getwalletfrompkey/$publicKey` - allows to create new wallet and private key.
+* `http://$yourURL.com/api/v1/getpublickeyfromprikey/$privateKEY` - allows to get public key from private key.
+* `http://$yourURL.com/api/v1/getbalance/$wallet` - allows to get last balance from wallet.
+*  `http://$yourURL.com/api/v1/getwalletdetails/$wallet` - allows to get all wallet history.
+* `http://$yourURL.com/api/v1/sendcloudcoin/`
+* `sprikey` sender's private key
+* `receiverwalletallows`  receiver's wallet
+* `amount`  and amount.
